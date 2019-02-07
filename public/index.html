@@ -1,41 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contourflix</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+    <div class="container">
+        <h3 class="d-inline align-middle"> 
+          Nevermind Netflix - use Contour-Flix
+        </h3>
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#accordion" class="nav-link">Component 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#boxes" class="nav-link">Component 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#authors" class="nav-link">Component 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center showcasetext">
+            <h1 class="display-4 mt-5 pt-5 "> CONTOUR-FlIX </h1>
+              <p class="lead">
+              </p>
+              <a href="#statement" class="btn btn-outline-secondary btn-lg text-white" >
+              <i class="fa fa-arrow-right"></i> Watch Free for 30 Days
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section class="py-3 text-center bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <h1 class="text-primary pb-3">
+              Component Div Option 1 - Plain
+              </h1>
+                <p class="lead">
+  
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam iure esse in dignissimos animi excepturi vitae, dolorum illum perspiciatis magnam accusamus voluptates numquam impedit. Necessitatibus dolorum impedit unde tempora. <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus pariatur officiis a natus qui tempore omnis reprehenderit quasi, assumenda quo nesciunt amet placeat voluptatibus saepe. Delectus sit unde vel sunt?
+                  
+                  Nga mihi nui.
+                </p>
+          </div>
+        </div>
+      </div> 
+  </section>
+   <!-- BOXES -->
+   <section id="boxes"  class="my-5 text-center">
+      <div class="container">
+          <h1 class="text-primary pb-3" id="boxes">Component Div Option 2 - Boxes </h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+              <div class="card-body">
+                <h3>component 2a</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam iure esse in dignissimos animi excepturi vitae, dolorum illum perspiciatis magnam accusamus voluptates numquam impedit. Necessitatibus dolorum impedit unde tempora.
+                  
+                    Nga mihi nui.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+              <div class="card-body">
+                <h3>component2b</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam iure esse in dignissimos animi excepturi vitae, dolorum illum perspiciatis magnam accusamus voluptates numquam impedit. Necessitatibus dolorum impedit unde tempora.
+                  
+                    Nga mihi nui.
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center bg-primary text-white">
+              <div class="card-body">
+                <h3>Component 2c</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, veniam iure esse in dignissimos animi excepturi vitae, dolorum illum perspiciatis magnam accusamus voluptates numquam impedit. Necessitatibus dolorum impedit unde tempora.
+                  
+                    Nga mihi nui.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- ACCORDION -->
+          <section id="accordion" class="py-5 text-center bg-light">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="info-header mb-5">
+                      <h1 class="text-primary pb-3"> Component Option 3 - Accordion </h1>
+                      <p class="lead pb-3">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates accusamus veritatis numquam voluptate animi? Earum veritatis, perspiciatis laudantium esse repellat nam dicta est ad possimus? Blanditiis inventore dolores autem accusamus!
+                      </p>
+                    </div>
+
+          <!-- ACCORDION -->
+          <div id="accordion" role="tablist">
+
+            <div class="card">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Component Placement Option
+                  </div>
+                </h5>
+              </div>
+              <div id="collapse1" class="collapse">
+                <div class="card-body">
+                  <h4>lorem </h4>  
+                    <h5 class="lead pb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi omnis cumque voluptate non ipsam quis in. Id excepturi amet, nisi nostrum fuga praesentium iste rerum cum quasi tenetur assumenda.
+                    </h5>   
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading2">
+                <h5 class="mb-0">
+                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Component Placement Option
+                  </div>
+                </h5>
+              </div>
+              <div id="collapse2" class="collapse">
+                <div class="card-body">
+                    <h4>lorem</h4>
+                    <h5 class="lead pb-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dolorum facere dolor tenetur nam labore, repellendus totam ipsam exercitationem eveniet consequatur, facilis velit voluptates alias ipsa quibusdam beatae eaque quasi!
+                    </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="heading3">
+                <h5 class="mb-0">
+                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fa fa-arrow-circle-down"></i> Component  Placement Option
+                  </div>
+                </h5>
+              </div>
+              <div id="collapse3" class="collapse">
+                <div class="card-body">
+                  <h4>Lorem</h4>
+                    <h5 class="lead pb-3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dolorum facere dolor tenetur nam labore, repellendus totam ipsam exercitationem eveniet consequatur, facilis velit voluptates alias ipsa quibusdam beatae eaque quasi!
+                    </h5>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0">
+                    <div href="#collapse4" data-toggle="collapse" data-parent="#accordion">
+                      <i class="fa fa-arrow-circle-down"></i> Component  Placement Option
+                    </div>
+                  </h5>
+                </div>
+                <div id="collapse4" class="collapse">
+                  <div class="card-body">
+                      <h4>lorem</h4>
+                        <h5 class="lead pb-3">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero dolorum facere dolor tenetur nam labore, repellendus totam ipsam exercitationem eveniet consequatur, facilis velit voluptates alias ipsa quibusdam beatae eaque quasi!
+                        </h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTOURS CREATIVE CREW -->
+  <section id="team" class="my-5 text-center">
+    <div class="container" authors .card:hover>
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              Component Option 4 - Contours Creative Crew
+            </h1>
+            <p class="lead pb-3">
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/luke.jpg" alt="" class="img-fluid w-70 mb-3">
+                  <h3>Aubrey</h3>
+                  <h5 class="text-muted">Op2</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ex beatae eaque, totam architecto veritatis, non consequatur perspiciatis, quis expedita enim quo quos dignissimos ad doloribus autem vel porro minus?</p>
+                  <div class="d-flex flex-row justify-content-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/stormtrooper.jpg" alt="" class="img-fluid w-70 mb-3">
+              <h3>Ben </h3>
+              <h5 class="text-muted">Opt1</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum doloribus ullam earum fugiat optio, omnis distinctio alias excepturi nisi beatae. Tempora excepturi voluptate dicta doloremque tempore obcaecati, dolorum voluptas.</p>
+              <div class="d-flex flex-row justify-content-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/ahsoka.jpg" alt="" class="img-fluid w-70 mb-3">
+              <h3>Ngapeita </h3>
+              <h5 class="text-muted">Opt2 </h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dignissimos quia cumque impedit, reiciendis atque dolorum assumenda dolores nemo pariatur placeat rerum officiis voluptate. Eius quo odit quidem veritatis excepturi.</p>
+              <div class="d-flex flex-row justify-content-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/princessleia.jpg" alt="" class="img-fluid w-70 mb-3">
+              <h3>Jess</h3></a>
+              <h5 class="text-muted">Opt3</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quae blanditiis sint doloribus ipsum pariatur dolor expedita? Facilis aliquid quasi ratione quidem facere esse vitae? Ratione veniam nihil quos suscipit? </p>
+              <div class="d-flex flex-row justify-content-center">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/darthvader.jpg" alt="" class="img-fluid w-70 mb-3">
+                <h3>Fetuolemoana</h3>
+                <h5 class="text-muted">Op4</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ex beatae eaque, totam architecto veritatis, non consequatur perspiciatis, quis expedita enim quo quos dignissimos ad doloribus autem vel porro minus?</p>
+                <div class="d-flex flex-row justify-content-center">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="footer-background-custom1">
+      <div class="container">
+        <div class="row text-center">
+            <h5 class="primary-overlay text-white">
+               
+            </h5>
+          </div>
+      </div>
+    </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+</body>
 </html>
