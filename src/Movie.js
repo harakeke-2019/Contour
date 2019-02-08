@@ -2,22 +2,37 @@ import React from 'react';
 import request from 'superagent'
 
 
-const Movie = props => {
+class Movie extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      data: []
+    }
+  }
 
-    const data = []
-    const idValue = props.match.params.id
+  componentDidMount() {
+    const idValue = this.props.match.params.id
     const MOVIE_API = `https://api.themoviedb.org/3/movie/${idValue}?api_key=81009ccb87e4c64254d9e74c695d113a&language=en-US`
 
     request.get(MOVIE_API)
-      .then(res => data.push(res.body))
-    console.log(idValue)
-    console.log(data.title)
-    //data.map(item => console.log(item))
+      .then(res => {
+        this.setState({
+          data: res.body
+        })
+      })
+  }
 
-    return (
+    render() {
+      const { data } = this.state
+      return ( 
         <div>
+          <h1>{data.title}</h1>
+          <h3>{data.runtime} minutes</h3>
+          <p>{data.overview}</p>
         </div>
     )
+    }
+    
 }
 
 export default Movie
