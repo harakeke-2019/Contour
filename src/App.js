@@ -3,6 +3,8 @@ import React from 'react'
 import Search from './Search'
 import {Route} from 'react-router-dom'
 
+import Movie from './Movie'
+
 
 
 class App extends React.Component {
@@ -16,7 +18,8 @@ class App extends React.Component {
 render() { 
 return (
   <div>
-    <Route path='/' component={Search}/>
+    <Route exact path='/' component={Search}/>
+    <Route path='/movie/:id' component={Movie} />
   </div>
  )  
 
