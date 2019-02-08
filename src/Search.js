@@ -43,10 +43,10 @@ render() {
   return  <React.Fragment>
     
 
-    <Form onSubmit={this.handleSubmit}> 
+    <Form class= 'search-container'onSubmit={this.handleSubmit}> 
             <Form.Field>
-              <input onChange={this.handleChange}/>
-              <Button positive>SUBMIT</Button>
+              <input  onChange={this.handleChange}/>
+              <Button class='search-icon' positive>Search</Button>
             </Form.Field>
           </Form>
           {items}
