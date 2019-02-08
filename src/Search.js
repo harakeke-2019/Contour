@@ -1,6 +1,8 @@
 import React from 'react'
 import request from 'superagent'
 
+import { Link, Route,Redirect } from 'react-router-dom'
+
 import { Form, Button } from 'semantic-ui-react'
 
 class Search extends React.Component {
@@ -34,12 +36,21 @@ class Search extends React.Component {
     
     }
 
+    getData = () => {
+      return this.state.data.map((el, index) => {
+        
+        return ( 
+        <li key={index}>
+          <Link to={`/movie/${el.id}`}>
+            {el.title}
+          </Link>
+        </li>)
+         }) 
+    }
+ 
+
 render() {
   console.log(this.state.data)
-
-  const items  = this.state.data.map((el, index) => {
-    return ( <li key={index}>{el.title}</li>)
-  }) 
   return  <React.Fragment>
     
 
@@ -49,7 +60,7 @@ render() {
               <Button class='search-icon' positive>Search</Button>
             </Form.Field>
           </Form>
-          {items}
+          {this.getData()}
   </React.Fragment>
 
   }

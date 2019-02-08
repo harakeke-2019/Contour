@@ -5,6 +5,8 @@ import Search from './Search'
 import {Route} from 'react-router-dom'
 import Display from './Display'
 
+import Movie from './Movie'
+
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +22,7 @@ return (
     <Nav />
     <br/>
     <Route path='/' component={Search}/>
+    <Route path='/movie/:id' component={Movie} />
     <Display/>
     <Team/>
   </div>
