@@ -24,11 +24,18 @@ class Movie extends React.Component {
 
     render() {
       const { data } = this.state
+      const poster = data.poster_path
+      //console.log(poster)
       return ( 
         <div>
           <h1>{data.title}</h1>
           <h3>{data.runtime} minutes</h3>
+          <h3>Rating: {data.vote_average}</h3>
           <p>{data.overview}</p>
+          <div>
+          <img src={`https://image.tmdb.org/t/p/w500${poster}`} />
+          </div>
+          
         </div>
     )
     }
